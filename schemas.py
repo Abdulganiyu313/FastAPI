@@ -48,7 +48,7 @@ class OrderRead(BaseModel):
         from_attributes = True
         
 class Settings(BaseModel):
-    authjwt_secret_key: str = '0e75f25ce65651bfba2dfff997d490cf26ff033134d3626cf4139ef52c921bb5'
+    authjwt_secret_key: str = SECRET_KEY
     
 class LoginModel(BaseModel):
     username: str
